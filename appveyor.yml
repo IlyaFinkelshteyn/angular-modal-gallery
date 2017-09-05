@@ -122,7 +122,7 @@ build_script:
   - ps: "npm --version # PowerShell" # Pass comment to PS for easier debugging
   # prepare
   - cd demo/systemjs
-  - npm install
+  - appveyor-retry npm install
   - cd ../..
   - cd demo/webpack
   - npm install
